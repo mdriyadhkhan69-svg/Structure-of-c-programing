@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+char name[100];
+printf("Enter name:");
+scanf("%s",name);
+char search;
+printf("Enter search name:");
+scanf(" %c",&search);
+int i=0;
+while(name[i]!=0){
+    if(name[i]==search){
+            printf("Found:%d",i);
+
+        break;
+    }
+i++;
+}
+
+return 0;
+}
